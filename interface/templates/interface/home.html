@@ -1,4 +1,30 @@
 {% extends 'interface/base.html' %}
 {% block content %}
-	<h2>Home</h2>
+  <h2>Home</h2>
+
+    <div class="row">
+      <div class="col-3">
+        <form action="#">
+          <label>Events
+            <select name="events" id="dropdown">
+              <option value="1">A</option>
+              <option value="2">B</option>
+              <option value="3">C</option>
+              <option value="4">D</option>
+            </select>
+          </label>
+          <!-- <input type="submit" value="Add to Calendar" /> -->
+        </form>
+      </div>
+      <div class="col-9">
+        <iframe
+          src="https://calendar.google.com/calendar/embed?showPrint=0&amp;showCalendars=0&amp;mode=WEEK&amp;height=600&amp;wkst=1&amp;bgcolor=%23ccccff&amp;src=v5dqoimmgbrjsi6dm3hevqcj90%40group.calendar.google.com&amp;color=%23B1365F&amp;ctz=America%2FToronto"
+          style="border-width:0"
+          width="800"
+          height="600"
+          frameborder="0"
+          scrolling="no"
+        ></iframe>
+      </div>
+    </div>
 {% endblock content %}

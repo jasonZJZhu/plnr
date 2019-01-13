@@ -1,12 +1,10 @@
 from django.shortcuts import render, redirect
-from .models import Challenge
 
 def home(request):
 	return render(request, 'interface/home.html', {'title': 'Home'})
 
 def progress(request):
-	context = {
-		'title': 'Progress',
-		'challenges': Challenge.objects.all()
-	}
-	return render(request, 'interface/progress.html', context)
+	return render(request, 'interface/progress.html', {'title': 'Progress'})
+
+def rewards(request):
+	return render(request, 'interface/rewards.html', {'title': 'Rewards'})

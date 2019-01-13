@@ -20,8 +20,26 @@ form {
   padding-left: 20px;
 }
 
-button {
-  padding-left: 20px;
+input {
+  border-radius: 30%;
+  padding-top: 20px;
+  width: 40%;
+  display: inline;
+}
+
+input:hover {
+  background-color: rgb(216, 131, 233) !important;
+  border: none;
+  transition-timing-function: ease-in;
+  transition: 0.5s;
+}
+
+.button {
+  text-align: center;
+}
+
+.current {
+  background-color: rgb(216, 131, 233) !important;
 }
 
 .home {

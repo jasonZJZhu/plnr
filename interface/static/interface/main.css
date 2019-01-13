@@ -8,10 +8,6 @@ h1, h2, h3, h4, h5, h6 {
   font-family: Montserrat !important;
 }
 
-ul {
-  margin: 0;
-}
-
 .bg-steel {
   background-color: #5f788a;
 }
@@ -49,27 +45,10 @@ a.article-title:hover {
   white-space: pre-line;
 }
 
-.article-img {
-  height: 65px;
-  width: 65px;
-  margin-right: 16px;
-}
-
 .article-metadata {
   padding-bottom: 1px;
   margin-bottom: 4px;
   border-bottom: 1px solid #e3e3e3
-}
-
-.article-metadata a:hover {
-  color: #333;
-  text-decoration: none;
-}
-
-.article-svg {
-  width: 25px;
-  height: 25px;
-  vertical-align: middle;
 }
 
 .account-img {
@@ -83,34 +62,16 @@ a.article-title:hover {
   font-size: 2.5rem;
 }
 
+.progress {
+  margin-top: 5px;
+}
+
+header .container {
+  margin:0 !important;
+}
+
 /*Thomas*/
 iframe {
-  padding: 20px 20px;
-}
-
-/*footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  padding: 20px 20px;
-*/}
-
-form {
-  padding-left: 20px;
-}
-
-button {
-  padding-left: 20px;
-}
-
-.home {
-  float: left;
-  padding-right: 20px;
-}
-
-.events {
-  float: left;
-  width: 50%;
-  padding: 20px 20px;
-  justify-content: center;
+  float: right;
+  width:90%;
 }

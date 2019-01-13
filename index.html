@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>MyPlner</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://bootswatch.com/4/journal/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1 class="home">Home</h1>
+      <!-- <h1 class="progress">Progress</h1>
+      <h1 class="rewards">Rewards</h1> -->
+      <h1 class="account">Account</h1>
+    </header>
+    <iframe
+      src="https://calendar.google.com/calendar/embed?showPrint=0&amp;showCalendars=0&amp;mode=WEEK&amp;height=600&amp;wkst=1&amp;bgcolor=%23ccccff&amp;src=v5dqoimmgbrjsi6dm3hevqcj90%40group.calendar.google.com&amp;color=%23B1365F&amp;ctz=America%2FToronto"
+      style="border-width:0"
+      width="800"
+      height="600"
+      frameborder="0"
+      scrolling="no"
+    ></iframe>
+
+    <div>
+      <form action="#">
+        <label
+          >Events
+          <select name="events" id="dropdown">
+            <option value="1">A</option>
+            <option value="2">B</option>
+            <option value="3">C</option>
+            <option value="4">D</option>
+          </select>
+        </label>
+        <!-- <input type="submit" value="Add to Calendar" /> -->
+      </form>
+    </div>
+
+    <div class="event-details"></div>
+
+    <footer><h1 class="contact">Contact</h1></footer>
+    <script src="script.js"></script>
+    <!-- <script scr="./app.jsx"></script> -->
+  </body>
+</html>

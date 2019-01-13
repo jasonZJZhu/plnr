@@ -32,10 +32,17 @@
 		      <span class="navbar-toggler-icon"></span>
 		      </button>
 		      <div class="collapse navbar-collapse" id="navbarToggle">
+		      	{% if user.is_authenticated %}
 		        <div class="navbar-nav mr-auto">
 		          <a class="nav-item nav-link" href="{% url 'interface-home' %}"><font size="5">Home</font></a>
 		          <a class="nav-item nav-link" href="{% url 'interface-progress' %}"><font size="5">Progress</font></a>
 		          <a class="nav-item nav-link" href="{% url 'interface-rewards' %}"><font size="5">Rewards</font></a>
+		         {% else %}
+			        <div class="navbar-nav mr-auto">
+			          <a class="nav-item nav-link" href="{% url 'register' %}"><font size="5">Home</font></a>
+			          <a class="nav-item nav-link" href="{% url 'register' %}"><font size="5">Progress</font></a>
+			          <a class="nav-item nav-link" href="{% url 'register' %}"><font size="5">Rewards</font></a>
+		         {% endif %}
 		        </div>
 		        <div class="navbar-nav">
 		        	{% if user.is_authenticated %}

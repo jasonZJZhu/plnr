@@ -25,8 +25,7 @@ SECRET_KEY = '=fwr58-32=0%^3_h0%65l^bgc=59u3muro#8l2df11cnsqy(l7'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
-
+ALLOWED_HOSTS = ['142.93.151.160', 'myplnr.com', 'localhost', '127.0.0.1']
 
 # Application definition
 
